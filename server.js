@@ -34,6 +34,12 @@ app.get(`/`, (req, res) => {
         textPage: `Welcome to my beoutiful website`
     });
 });
+app.get(`/projects`, (req, res) => {
+    res.render(`projects.hbs`, {
+        pageTitle: `Project Page`,
+        textPage: `Welcome to the projects page`
+    });
+});
 
 app.get(`/about`, (req, res) => {
     res.render(`about.hbs`, {
